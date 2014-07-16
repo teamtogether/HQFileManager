@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HQFileManager</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_personal_center">个人中心</string>
+    <string name="menu_setting">设置</string>
+    <string name="menu_guide">快速指南</string>
+    <string name="menu_gprs">流量统计</string>
+    <string name="menu_about">版本和反馈</string>
+
+    <string name="button_user_name">用户昵称</string>
+    <string name="button_detail">0好友|0.0Byte|0次</string>
+    
+    <string name="menu_picture">相册</string>
+    <string name="menu_gallery">图库 </string>
+    <string name="menu_app">应用</string>
+    <string name="menu_media">影音</string>
+    <string name="menu_file">文件</string>
+    <string name="menu_history">历史</string>
+</resources>
