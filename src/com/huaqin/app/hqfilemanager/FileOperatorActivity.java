@@ -23,7 +23,14 @@ import android.widget.TextView;
 import com.huaqin.app.hqfilemanager.model.DummyGenerator;
 
 public class FileOperatorActivity extends Activity {
-    
+    private static int [] tabName = {
+    	R.string.menu_picture,
+    	R.string.menu_gallery,
+    	R.string.menu_app,
+    	R.string.menu_media,
+    	R.string.menu_file,
+    	R.string.menu_history
+    };
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,12 +54,11 @@ public class FileOperatorActivity extends Activity {
         int tabWidth = metrics.widthPixels / 3;
         int tabHeight = metrics.widthPixels / 7;
         
-        for (int i = 0; i < 3; i++) {
-        	TabSpec spec = tabHost.newTabSpec("tab"+i);
-        	spec.setIndicator(getTabView(tabWidth, tabHeight, "TAB"+i));
-        	adapter.addTab(spec, "tab"+i);
+        for (int i = 0; i < tabName.length; i++) {
+        	TabSpec spec = tabHost.newTabSpec(getResources().getString(tabName[i]));
+        	spec.setIndicator(getTabView(tabWidth, tabHeight, getResources().getString(tabName[i])));
+        	adapter.addTab(spec, getResources().getString(tabName[i]));
         }
-        
    }
     
     private TextView getTabView(int width, int height, String title) {
@@ -115,7 +121,7 @@ public class FileOperatorActivity extends Activity {
 
 		@Override
 		public int getCount() {
-			return 3;
+			return tabName.length;
 		}
 
 		public void onPageScrollStateChanged(int state) {
