@@ -4,10 +4,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
 
-public class MainFragment extends BaseFragment implements View.OnClickListener{
+public class FileOperatorMainFragment extends BaseFragment{
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -17,17 +16,7 @@ public class MainFragment extends BaseFragment implements View.OnClickListener{
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View view = inflater.inflate(R.layout.fragment_main, container, false);
-		view.findViewById(R.id.menu_first).setOnClickListener(this);
+		View view = inflater.inflate(R.layout.fragment_file_operator_main, container, false);
 		return view;
-	}
-
-	@Override
-	public void onClick(View view) {
-		switch(view.getId()) {
-		case R.id.menu_first:
-			FileOperatorActivity.startActivity(getActivity(), null);
-			break;
-		}
 	}
 }

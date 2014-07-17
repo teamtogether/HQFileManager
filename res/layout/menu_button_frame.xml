@@ -11,6 +11,7 @@
 
         <TableRow>
            <LinearLayout
+				android:id="@+id/menu_first"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/table_frame_gray"
@@ -26,12 +27,12 @@
 		        android:scaleType="fitXY"
 		        android:layout_marginTop="5dp"
 		        android:background="@drawable/ic_menu_piture"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-		        	android:layout_gravity="center_horizontal"
-                    android:padding="5dp"
-                    android:text="@string/menu_picture" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:padding="5dp"
+				android:text="@string/menu_picture" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -74,12 +75,12 @@
 		        android:scaleType="fitXY"
 		        android:layout_marginTop="5dp"
 		        android:background="@drawable/ic_menu_app"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
-		        	android:layout_gravity="center_horizontal"
-                    android:text="@string/menu_app" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="5dp"
+				android:layout_gravity="center_horizontal"
+				android:text="@string/menu_app" />
             </LinearLayout>
         </TableRow>
         <TableRow>
@@ -100,12 +101,12 @@
 		        android:scaleType="fitXY"
 		        android:layout_marginTop="5dp"
 		        android:background="@drawable/ic_menu_media"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
-		        	android:layout_gravity="center_horizontal"
-                    android:text="@string/menu_media" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="5dp"
+				android:layout_gravity="center_horizontal"
+				android:text="@string/menu_media" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -123,12 +124,12 @@
 		        android:scaleType="fitXY"
 		        android:layout_marginTop="5dp"
 		        android:background="@drawable/ic_menu_file"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
-		        	android:layout_gravity="center_horizontal"
-                    android:text="@string/menu_file" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="5dp"
+				android:layout_gravity="center_horizontal"
+				android:text="@string/menu_file" />
             </LinearLayout>
             <!-- 好友数 -->
 
@@ -148,12 +149,12 @@
 		        android:scaleType="fitXY"
 		        android:layout_marginTop="5dp"
 		        android:background="@drawable/ic_menu_history"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
-		        	android:layout_gravity="center_horizontal"
-                    android:text="@string/menu_history" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="5dp"
+				android:layout_gravity="center_horizontal"
+				android:text="@string/menu_history" />
             </LinearLayout>
         </TableRow>
     </TableLayout>
