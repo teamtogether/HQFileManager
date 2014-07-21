@@ -18,4 +18,11 @@
     <string name="menu_media">影音</string>
     <string name="menu_file">文件</string>
     <string name="menu_history">历史</string>
+    
+        <string name="string1">Hotknot 屏幕贴贴，秒速链接</string>
+    <string name="string2">传输速度，分分秒秒搞定</string>
+    <string name="string3">多选传，全发群传</string>
+    <string name="welcome">欢迎使用XX</string>
+    <string name="takename">取一个昵称</string>
+    <string name="button">开始</string>
 </resources>
