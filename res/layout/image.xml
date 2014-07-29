@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical" >
-    <ImageView 
+    <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:id="@+id/image_Item"/>
+        android:id="@+id/image_Item"
+        android:scaleType="centerCrop"
+        />
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/image_Item1_enter"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom|right" 
+        android:visibility="gone"
+        android:src="@drawable/enter"/>
+
+</FrameLayout>

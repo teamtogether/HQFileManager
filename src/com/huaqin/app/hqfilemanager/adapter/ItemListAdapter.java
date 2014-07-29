@@ -16,6 +16,7 @@ public class ItemListAdapter extends ArrayAdapter<Item> {
 	private Activity activity;
 	
 	public ItemListAdapter(Activity activity, ArrayList<Item> items) {
+		//R.layout.item_row
 		super(activity, R.layout.item_row, items);
 		this.activity = activity;
 	}

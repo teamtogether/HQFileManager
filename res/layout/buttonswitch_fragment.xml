@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/lyt_swfrag_root"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical" >
+     >
 <GridView 
     android:id="@+id/GridView_picture"
     android:layout_width="fill_parent"
@@ -12,6 +12,27 @@
     android:verticalSpacing="1pt"
     android:numColumns="4"
     android:gravity="center"></GridView>
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="bottom"
+	    android:visibility="invisible"
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    android:id="@+id/button_Linearlayout"
+	    android:background="#e0000000">
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel_image"
+        android:text="@string/cancel"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/translate_image"
+        android:text="@string/translate"
+        />
+  	 </LinearLayout>>
     
 
-</LinearLayout>
+</FrameLayout>
